@@ -1,0 +1,42 @@
+<html>
+<body>
+<center>
+    <head>
+        <title>The Family Book</title>
+      <h1> The Family Book </h1>
+      <img id="album" src="IMG-20210102-WA0022.jpg">
+      <div>
+      <label id="name">The Payak Family</label>
+      </div>
+      <div>
+        <button type="button" onclick="nextslide()">
+          next</button>
+      </div>
+  
+    </head>
+    </div>
+  </body>
+</center>
+
+    <script>
+    var images = [
+  "shivansh.jpg",
+  "minaxi.jpg",
+  "kamal.jpg",
+  "wedarth.jpg",
+  "family-picture.jpg",
+];
+var names = [
+  "Shivansh Payak","Minaxi Payak", "Kamal Payak", "Vedarth Payak", "The Payak Family"
+];
+var i = 0;
+function nextslide() {
+  if (i == 6) {
+    i = 0;
+  }
+  document.getElementById("album").src = images[i];
+  document.getElementById("name").innerHTML=names[i];
+  i++;
+}
+    </script>
+</html>
